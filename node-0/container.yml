@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  node-0:
+    image: hashcloak/meson:master
+    ports:
+      - "30003:30003"
+      - "6543:6543"
+    volumes:
+      - /root/config:/conf

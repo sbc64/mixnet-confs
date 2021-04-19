@@ -1,0 +1,58 @@
+[Authority]
+  Addresses = ["0.0.0.0:30000"]
+  DataDir = "/conf"
+
+[Logging]
+  Disable = false
+  File = "/conf/authority.log"
+  Level = "DEBUG"
+
+[Parameters]
+  SendRatePerMinute = 100
+  Mu = 0.00025
+  MuMaxDelay = 46051
+  LambdaP = 0.00025
+  LambdaPMaxDelay = 46051
+  LambdaL = 0.00025
+  LambdaLMaxDelay = 46051
+  LambdaD = 0.00025
+  LambdaDMaxDelay = 46051
+  LambdaM = 0.00025
+  LambdaMMaxDelay = 46051
+
+[Debug]
+  Layers = 3
+  MinNodesPerLayer = 2
+  GenerateOnly = false
+
+[[Mixes]]
+  Identifier = ""
+  IdentityKey = "18ynT6FvW4LyFF/MMppbIAocWdVmDsQK8ISK6J7Fmvk="
+
+[[Mixes]]
+  Identifier = ""
+  IdentityKey = "3U6cGVawkuR2HtOY4mtvoOXEBB6NI8OgpLFfuiNpbRg="
+
+[[Mixes]]
+  Identifier = ""
+  IdentityKey = "Cl88xEao8Y0WSoKXYXB+9HqBsnSM+Y8ctzm6EdJWxAU="
+
+[[Mixes]]
+  Identifier = ""
+  IdentityKey = "PVnY4EUfd80zqfY/tUrJ6iuWPVy0Os4nJkF2JBoKy8A="
+
+[[Mixes]]
+  Identifier = ""
+  IdentityKey = "4LEHOE46zDeE9hn1lrOr2JTmOWQL8/yYrkDA3xxP+X0="
+
+[[Mixes]]
+  Identifier = ""
+  IdentityKey = "jjdfdj+pRwl3M1JBy0qqoH8u+tj2AHRIXtmuSrobL8o="
+
+[[Providers]]
+  Identifier = "provider-0"
+  IdentityKey = "vWpyk2HHO48xwW7SSIEy+U4mwPhF9dXgX3vREMFo6JQ="
+
+[[Providers]]
+  Identifier = "provider-1"
+  IdentityKey = "BEmc3x1q/GzpnOE2sRtkHkSTsh0aZqJ0AGLmPoJuGxI="

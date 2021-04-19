@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  auth:
+    image: hashcloak/authority:master
+    ports:
+      - "30000:30000"
+      - "6543:6543"
+    volumes:
+      - /root/config:/conf

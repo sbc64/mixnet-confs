@@ -1,0 +1,42 @@
+[Server]
+  Identifier = "node-5"
+  Addresses = ["0.0.0.0:30008"]
+  OnlyAdvertiseAltAddresses = true
+  DataDir = "/conf"
+  IsProvider = false
+  [Server.AltAddresses]
+    tcp4 = ["157.245.45.95:30008"]
+
+[Logging]
+  Disable = false
+  File = "katzenpost.log"
+  Level = "DEBUG"
+
+[PKI]
+  [PKI.Nonvoting]
+    Address = "157.245.41.154:30000"
+    PublicKey = "qVhmF/rOHVbHwhHBP6oOOP7fE9oPg4IuEoxac+RaCHk="
+
+[Management]
+  Enable = false
+  Path = "/conf/management_sock"
+
+[Debug]
+  NumSphinxWorkers = 1
+  NumProviderWorkers = 1
+  NumKaetzchenWorkers = 3
+  SchedulerExternalMemoryQueue = false
+  SchedulerQueueSize = 0
+  SchedulerMaxBurst = 16
+  UnwrapDelay = 10
+  ProviderDelay = 500
+  KaetzchenDelay = 750
+  SchedulerSlack = 10
+  SendSlack = 50
+  DecoySlack = 15000
+  ConnectTimeout = 120000
+  HandshakeTimeout = 600000
+  ReauthInterval = 30000
+  SendDecoyTraffic = false
+  DisableRateLimit = true
+  GenerateOnly = false
